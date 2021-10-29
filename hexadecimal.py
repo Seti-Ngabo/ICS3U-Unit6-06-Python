@@ -9,14 +9,12 @@ import constants
 
 def hexa_decimal(user_input):
     my_characters = []
-    numbers = ""
+    unicodes = ""
 
-    for numbers in user_input:
-        if numbers in constants.DICTIONARY.keys():
-            my_characters.append(constants.DICTIONARY[numbers])
-        else:
-            continue
-
+    for unicodes in user_input:
+        if unicodes in constants.DICTIONARY.keys():
+            my_characters.append(constants.DICTIONARY[unicodes])
+    
     return my_characters
 
 
